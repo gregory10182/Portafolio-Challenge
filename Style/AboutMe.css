@@ -1,0 +1,103 @@
+.aboutMe {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 200px;
+  flex-wrap: wrap;
+}
+
+.aboutMe h1 {
+  width: 100%;
+  text-align: center;
+  font-size: clamp(26px, 3vw, 37px);
+  margin: 0px;
+}
+
+.aboutMe p {
+  width: 100%;
+  text-align: left;
+  font-size: clamp(16px, 2vw, 30px);
+  margin-bottom: 0;
+}
+
+.aboutMe .CV {
+  height: 40px;
+  width: 130px;
+  margin: 30px 0;
+}
+
+
+/* Dark */
+
+
+.Dark .aboutMe h1 {
+  color: #00E0D9;
+}
+
+.Dark .aboutMe p {
+  color: #B5BACF;
+}
+
+.Dark .aboutMe .CV {
+  background-color: #DADCE7;
+  color: #15273B;
+}
+
+
+/* Light */
+
+.Light .aboutMe h1 {
+  color: #15273B;
+}
+
+.Light .aboutMe p {
+  color: #203b5b;
+}
+
+.Light .aboutMe .CV {
+  background-color: #15273B;
+  color: #DADCE7;
+}
+
+
+/* @media only screen and (min-width: 768px) {
+
+  .aboutMe h1 {
+    font-size: 33px;
+  }
+
+  .aboutMe p {
+    font-size: 20px;
+  }
+
+}
+
+@media only screen and (min-width: 1024px) {
+
+  .aboutMe h1 {
+    font-size: 37px;
+  }
+
+  .aboutMe p {
+    padding-right: 50px;
+    font-size: 26px;
+  }
+
+}
+
+@media only screen and (min-width: 1920px) {
+
+  .aboutMe h1 {
+    font-size: 37px;
+  }
+
+  .aboutMe p {
+    font-size: 30px;
+  }
+
+} */
+
+
+

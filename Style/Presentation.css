@@ -1,0 +1,137 @@
+.Presentacion {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+}
+
+.Presentacion .Name {
+  font-size: clamp(40px, 7vw, 85px);
+  margin: 8px 0px;
+}
+
+.Presentacion h1 {
+  width: 100%;
+  font-size: clamp(30px, 6vw, 70px);
+  margin: 8px 0px;
+  text-align: left;
+}
+
+.Presentacion h3 {
+  text-align: left;
+  font-size: clamp(16px, 2vw, 30px);
+  margin: 8px 0px;
+}
+
+.Presentacion p {
+  font-size: clamp(16px, 2vw, 30px);
+  text-align: left;
+  max-width: 1100px;
+}
+
+.Presentacion .contacts {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 60px;
+  height: 50px;
+  width: 100%;
+  margin: 40px 0px;
+}
+
+.Presentacion .contact {
+  height: 25px;
+  width: 25px;
+}
+
+
+
+/* Dark */
+
+.Dark h1 {
+  color: #00E0D9;
+}
+
+.Dark .Career {
+  color: #00A39E;
+}
+
+.Dark h3 {
+  color: #CED1DF;
+}
+
+.Dark p {
+  color: #B5BACF;
+}
+
+.Dark .contact {
+  filter: invert(92%) sepia(12%) saturate(325%) hue-rotate(196deg) brightness(91%) contrast(91%);
+}
+
+
+/* Light */
+
+.Light h1 {
+  color: #15273B;
+}
+
+.Light .Presentacion {
+  color: #203b5b;
+}
+
+
+
+.Light .contact {
+  filter: invert(17%) sepia(15%) saturate(3224%) hue-rotate(176deg) brightness(92%) contrast(84%);
+}
+
+
+
+@media only screen and (min-width: 768px) {
+
+  .Presentacion .contact {
+    height: 30px;
+    width: 30px;
+  }
+
+
+}
+
+@media only screen and (min-width: 1024px) {
+
+  .Presentacion .contacts {
+    justify-content: flex-start;
+    column-gap: 80px;
+  }
+
+  .Presentacion .contact {
+    height: 35px;
+    width: 35px;
+  }
+
+
+}
+
+@media only screen and (min-width: 1440px) {
+
+  .Presentacion .contacts {
+    column-gap: 100px;
+  }
+
+} 
+
+@media only screen and (min-width: 1920px) {
+
+  .Presentacion .contacts {
+    column-gap: 110px;
+  }
+
+  .Presentacion .contact {
+    height: 40px;
+    width: 40px;
+  }
+
+
+}
