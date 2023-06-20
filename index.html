@@ -15,7 +15,7 @@
   <title>Gregory Pérez</title>
 </head>
 
-<body onload="removePreload()" class="Dark">
+<body class="Dark">
   <div id="root">
     <div class="Container">
       <div class="Navbar">
@@ -36,12 +36,12 @@
             <img class="themeIcon" src=https://cdn-icons-png.flaticon.com/512/4489/4489231.png />
           </button>
 
-          <button>en</button>
+          <button onclick="changeLanguage()">en</button>
         </div>
       </div>
 
       <div class="Presentacion" id="presentacion">
-        <h3>
+        <h3 id="Greeting">
           Hola, mi nombre es
         </h3>
         <h1 class="Name">
@@ -50,13 +50,14 @@
         <h1 class="Career">
           Ingeniero de Software
         </h1>
-        <p>
+        <p id="Summary">
           Recien egresado de la Universidad Politécnico Grancolombiano, me especializo en programación web frontend con
           conocimientos de backend. Ansioso por aplicar mis habilidades y conocimientos en proyectos desafiantes y
           emocionantes.
         </p>
         <div class="contacts">
-          <a class="linkedin" href="https://www.linkedin.com/in/gregory-jos%C3%A9-p%C3%A9rez-fern%C3%A1ndez-a509a8260/" target="_blank">
+          <a class="linkedin" href="https://www.linkedin.com/in/gregory-jos%C3%A9-p%C3%A9rez-fern%C3%A1ndez-a509a8260/"
+            target="_blank">
             <img class="contact" src="https://cdn-icons-png.flaticon.com/512/3800/3800073.png" alt="" />
           </a>
 
@@ -72,8 +73,8 @@
       </div>
 
       <div class="aboutMe" id="aboutMe">
-        <h1>Acerca de Mi</h1>
-        <p>
+        <h1 id="aboutMeTitle">Acerca de Mi</h1>
+        <p id="aboutMePart1">
           Soy un entusiasta del desarrollo web con ganas de aprender y mejorar mis habilidades. Estudié ingenieria de
           software
           en la Universidad Politécnico Grancolombiano y desde entonces he estado explorando las diferentes herramientas
@@ -84,7 +85,7 @@
           conocimientos
           en internet de las cosas e impresión 3D, y domino Linux y Windows como sistemas operativos.
         </p>
-        <p>
+        <p id="aboutMePart2">
           Además de mi formación académica, he participado en programas de capacitación como el bootcamp de Microsoft
           LaunchX
           Latam y actualmente el programa Oracle ONE de Oracle. También he tomado cursos de tecnología en Platzi para
@@ -98,7 +99,7 @@
 
 
       <div class="TechStack" id="TechStack">
-        <h1>Tecnologias</h1>
+        <h1 id="TechStackTitle">Tecnologias</h1>
         <div class="Selector">
           <button onclick="stackChange('frontend')" class="selection Selected">
             FrontEnd
@@ -106,115 +107,116 @@
           <button onclick="stackChange('backend')" class="selection">
             BackEnd
           </button>
-          <button onclick="stackChange('other')" class="selection">
+          <button onclick="stackChange('other')" class="selection" id="other">
             Otros
           </button>
         </div>
-      
-      
+
+
         <div class="Stack" id="FrontEndStack">
           <div class="Technology">
             <img src="https://img.icons8.com/color/2x/html-5.png" />
-      
+
             <p class="Techname">HTML5</p>
             <div class="tooltip">
               <p>HTML5</p>
-      
+
             </div>
           </div>
-      
+
           <div class="Technology">
             <img src="https://img.icons8.com/color/2x/css3.png" />
-      
+
             <p class="Techname">CSS3</p>
             <div class="tooltip">
               <p>CSS3</p>
-      
+
             </div>
           </div>
-      
+
           <div class="Technology">
             <img src="https://img.icons8.com/color/2x/javascript--v2.png" />
-      
+
             <p class="Techname">JavaScript</p>
             <div class="tooltip">
               <p>JavaScript</p>
-      
+
             </div>
           </div>
-      
+
           <div class="Technology">
             <img src="https://img.icons8.com/ultraviolet/2x/react--v2.png" />
-      
+
             <p class="Techname">React</p>
             <div class="tooltip">
               <p>React</p>
-      
+
             </div>
           </div>
         </div>
-      
-      
-      
+
+
+
         <div class="Stack" id="BackEndStack">
           <div class="Technology">
             <img src="https://img.icons8.com/fluency/2x/node-js.png" />
-      
+
             <p class="Techname">NodeJS</p>
             <div class="tooltip">
               <p>NodeJS</p>
-      
+
             </div>
           </div>
           <div class="Technology">
             <img src="https://img.icons8.com/office/2x/express-js.png" />
-      
+
             <p class="Techname">ExpressJS</p>
             <div class="tooltip">
               <p>ExpressJS</p>
-      
+
             </div>
           </div>
           <div class="Technology">
             <img
               src="https://img.icons8.com/external-tal-revivo-color-tal-revivo/2x/external-mongodb-a-cross-platform-document-oriented-database-program-logo-color-tal-revivo.png" />
-      
+
             <p class="Techname">MongoDB</p>
             <div class="tooltip">
               <p>MongoDB</p>
-      
+
             </div>
           </div>
         </div>
-      
-      
+
+
         <div class="Stack" id="OtherStack">
           <div class="Technology">
             <img src="https://img.icons8.com/color/2x/git.png" />
-      
+
             <p class="Techname">Git</p>
             <div class="tooltip">
               <p>Git</p>
-      
+
             </div>
           </div>
           <div class="Technology">
             <img src="https://img.icons8.com/ios-filled/2x/console.png" />
-      
+
             <p class="Techname">Terminal</p>
             <div class="tooltip">
               <p>Terminal</p>
-      
+
             </div>
           </div>
         </div>
       </div>
 
       <div class="Projects" id="Projects">
-        <h1>Proyectos</h1>
+        <h1 id="ProjectsTitle">Proyectos</h1>
         <div class="Project">
           <h2>Pokedex</h2>
-          <p>Actividad del BootCamp LaunchX latam de Innovaccion y Microsoft, completé un proyecto que simula un
+          <p id="pokedexSummary">Actividad del BootCamp LaunchX latam de Innovaccion y Microsoft, completé un proyecto
+            que simula un
             artilugio de la
             famosa serie Pokemon que guarda información sobre los Pokemones.
           </p>
@@ -236,8 +238,9 @@
           </div>
         </div>
         <div class="Project">
-          <h2>Recetario Digital</h2>
-          <p>Desarrollé un recetario digital para ayudarme a organizar y ajustar mis recetas de cocina y panadería. El
+          <h2 id="recetarioTitle">Recetario Digital</h2>
+          <p id="recetarioSummary">Desarrollé un recetario digital para ayudarme a organizar y ajustar mis recetas de
+            cocina y panadería. El
             recetario
             cuenta con una interfaz intuitiva y funciones útiles como el ajuste automático de ingredientes.
           </p>
@@ -293,8 +296,8 @@
         </div>
 
         <div class="Project">
-          <h2>Seguimiento de venta</h2>
-          <p>
+          <h2 id="seguimientoTitle">Seguimiento de venta</h2>
+          <p id="seguimientoSummary">
             Actualmente estoy desarrollando de una aplicación web para el seguimiento de ventas diarias de un local
             comercial. La
             aplicación permite monitorear datos como la meta del mes, la venta del día y el progreso hacia el

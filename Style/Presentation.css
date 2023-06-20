@@ -22,7 +22,7 @@
   animation: slide-right 0.5s 0.55s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
-.Presentacion h1 {
+.Presentacion .Career {
   width: 100%;
   font-size: clamp(30px, 6vw, 70px);
   margin: 8px 0px;
