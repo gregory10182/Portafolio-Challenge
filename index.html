@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="./Style/AboutMe.css">
   <link rel="stylesheet" href="./Style/TechStack.css">
   <link rel="stylesheet" href="./Style/Projects.css">
+  <link rel="stylesheet" href="./Style/CurriculumVisualizer.css">
   <title>Gregory Pérez</title>
 </head>
 
@@ -92,9 +93,17 @@
           ampliar
           mis conocimientos. En mi tiempo libre, disfruto del fútbol, el automovilismo, la cocina y los videojuegos.
         </p>
-        <button class="CV">
+        <button onclick="curriculumVisualizer()" class="CV">
           Descargar CV
         </button>
+      </div>
+
+
+      <div style="display: none; opacity: 0;" class="curriculumVisualizer">
+        <div class="closeArea">
+          <button onclick="curriculumVisualizer()" class="close">X</button>
+        </div>
+        <embed class="visualizer" src="CVs/CV Gregory Pérez.pdf" type="application/pdf">
       </div>
 
 

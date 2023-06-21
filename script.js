@@ -1,4 +1,5 @@
 let englishText = false;
+let visualizerState = false;
 
 const stackChange = (stack) => {
   const selections = document.querySelectorAll(".selection");
@@ -89,6 +90,7 @@ const changeLanguage = () => {
   const recetarioSummary = document.querySelector("#recetarioSummary");
   const seguimientoTitle = document.querySelector("#seguimientoTitle");
   const seguimientoSummary = document.querySelector("#seguimientoSummary");
+  const cvVisualizer = document.querySelector(".visualizer");
 
   greeting.innerHTML =
     englishText === true ? "Hi, my name is" : "Hola, mi nombre es";
@@ -109,6 +111,12 @@ const changeLanguage = () => {
       : "Además de mi formación académica, he participado en programas de capacitación como el bootcamp de Microsoft LaunchX Latam y actualmente el programa Oracle ONE de Oracle. También he tomado cursos de tecnología en Platzi para ampliar mis conocimientos. En mi tiempo libre, disfruto del fútbol, el automovilismo, la cocina y los videojuegos.";
   aboutMeButton.innerHTML =
     englishText === true ? "Download CV" : "Descargar CV";
+  cvVisualizer.setAttribute(
+    "src",
+    englishText === true
+      ? "CVs/GregoryPerez Resume.pdf"
+      : "CVs/CV Gregory Pérez.pdf"
+  );
   techStackTitle.innerHTML =
     englishText === true ? "Technologies" : "Tecnologias";
   techStackOther.innerHTML = englishText === true ? "Others" : "Otros";
@@ -129,4 +137,24 @@ const changeLanguage = () => {
     englishText === true
       ? "I am currently developing a web application for the daily sales tracking of a commercial store. The application allows to monitor data such as the monthly goal, the daily sale and the progress towards the achievement of the goal."
       : "Actualmente estoy desarrollando de una aplicación web para el seguimiento de ventas diarias de un local comercial. La aplicación permite monitorear datos como la meta del mes, la venta del día y el progreso hacia el cumplimiento de la meta.";
+};
+
+const curriculumVisualizer = () => {
+  const cvVisualizer = document.querySelector(".curriculumVisualizer");
+
+  if (visualizerState === false) {
+    cvVisualizer.style.display = "flex";
+    setTimeout(() => {
+      cvVisualizer.style.opacity = 1;
+    }, 50);
+    visualizerState = !visualizerState;
+  } else {
+    cvVisualizer.style.opacity = 0;
+
+    setTimeout(() => {
+      cvVisualizer.style.display = "none";
+    }, 450);
+
+    visualizerState = !visualizerState;
+  }
 };

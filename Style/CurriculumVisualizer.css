@@ -1,0 +1,81 @@
+.curriculumVisualizer {
+  justify-content: center;
+  flex-wrap: wrap;
+  row-gap: 5px;
+  z-index: 10;
+  position: fixed;
+  width: 80%;
+  top: calc(50% - 20%);
+  height: 40%;
+  border-radius: 5px;
+
+  padding: 10px;
+  transition: opacity 0.4s;
+}
+
+
+.curriculumVisualizer .closeArea {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  height: 25px;
+}
+
+.closeArea .close {
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  font-size: 12px;
+}
+
+.curriculumVisualizer .visualizer {
+  width: 100%;
+  height: 90%;
+}
+
+
+.Dark .curriculumVisualizer{
+  background-color: #25456A;
+}
+
+.Dark .close {
+  background-color: #DADCE7;
+  color: #15273B;
+}
+
+.Light .curriculumVisualizer{
+  background-color: #E6E8EF;
+}
+
+.Light .close {
+  background-color: #15273B;
+  color: #DADCE7;
+}
+
+
+
+
+@media only screen and (min-width: 768px) {
+
+  .curriculumVisualizer {
+    top: calc(50% - 35%);
+    height: 70%;
+    padding: 15px 20px;
+  }
+
+  .curriculumVisualizer .closeArea{
+    height: 30px;
+  }
+
+  .closeArea .close{
+    width: 30px;
+    height: 30px;
+    font-size: 14px;
+  }
+
+  .curriculumVisualizer .visualizer{
+    height: 94%;
+  }
+
+}
