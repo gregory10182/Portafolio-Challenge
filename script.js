@@ -75,6 +75,9 @@ const changeTheme = () => {
 const changeLanguage = () => {
   englishText = !englishText;
 
+  const navBarAboutMe = document.querySelector("#navbarAboutMe");
+  const navBarTechStack = document.querySelector("#navbarTechStack");
+  const navBarProjects = document.querySelector("#navbarProjects");
   const greeting = document.querySelector("#Greeting");
   const career = document.querySelector(".Career");
   const summary = document.querySelector("#Summary");
@@ -92,6 +95,10 @@ const changeLanguage = () => {
   const seguimientoSummary = document.querySelector("#seguimientoSummary");
   const cvVisualizer = document.querySelector(".visualizer");
 
+  navBarAboutMe.innerHTML = englishText === true ? "About Me" : "Sobre Mi";
+  navBarTechStack.innerHTML =
+    englishText === true ? "Technologies" : "Tecnologias";
+  navBarProjects.innerHTML = englishText === true ? "Projects" : "Proyectos";
   greeting.innerHTML =
     englishText === true ? "Hi, my name is" : "Hola, mi nombre es";
   career.innerHTML =
