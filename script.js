@@ -78,6 +78,7 @@ const changeLanguage = () => {
   const navBarAboutMe = document.querySelector("#navbarAboutMe");
   const navBarTechStack = document.querySelector("#navbarTechStack");
   const navBarProjects = document.querySelector("#navbarProjects");
+  const languageButton = document.querySelector("#languageButton");
   const greeting = document.querySelector("#Greeting");
   const career = document.querySelector(".Career");
   const summary = document.querySelector("#Summary");
@@ -99,6 +100,7 @@ const changeLanguage = () => {
   navBarTechStack.innerHTML =
     englishText === true ? "Technologies" : "Tecnologias";
   navBarProjects.innerHTML = englishText === true ? "Projects" : "Proyectos";
+  languageButton.innerHTML = englishText === true ? "es" : "en";
   greeting.innerHTML =
     englishText === true ? "Hi, my name is" : "Hola, mi nombre es";
   career.innerHTML =
