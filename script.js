@@ -105,7 +105,7 @@ const changeLanguage = () => {
     englishText === true ? "Software Engineer" : "Ingeniero de Software";
   summary.innerHTML =
     englishText === true
-      ? "Recently graduated from the Universidad Politécnico Grancolombiano, I specialize in web frontend programming with backend knowledge. Eager to apply my skills and knowledge in challenging and exciting projects."
+      ? "Graduated from the Universidad Politécnico Grancolombiano, I specialize in web frontend programming with backend knowledge. Eager to apply my skills and knowledge in challenging and exciting projects."
       : "Recien egresado de la Universidad Politécnico Grancolombiano, me especializo en programación web frontend con conocimientos de backend. Ansioso por aplicar mis habilidades y conocimientos en proyectos desafiantes y emocionantes.";
   aboutMeTitle.innerHTML = englishText === true ? "About me" : "Acerca de Mi";
   aboutMePart1.innerHTML =
