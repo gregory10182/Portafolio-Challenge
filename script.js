@@ -88,6 +88,10 @@ const changeLanguage = () => {
   const aboutMeButton = document.querySelector(".CV");
   const techStackTitle = document.querySelector("#TechStackTitle");
   const techStackOther = document.querySelector("#other");
+  const motorSports = document.querySelectorAll(".motorSports");
+  const football = document.querySelectorAll(".football");
+  const cooking = document.querySelectorAll(".cooking");
+  const videoGames = document.querySelectorAll(".videoGames");
   const projectsTitle = document.querySelector("#ProjectsTitle");
   const pokedexSummary = document.querySelector("#pokedexSummary");
   const recetarioTitle = document.querySelector("#recetarioTitle");
@@ -108,7 +112,7 @@ const changeLanguage = () => {
   summary.innerHTML =
     englishText === true
       ? "Graduated from the Universidad Politécnico Grancolombiano, I specialize in web frontend programming with backend knowledge. Eager to apply my skills and knowledge in challenging and exciting projects."
-      : "Recien egresado de la Universidad Politécnico Grancolombiano, me especializo en programación web frontend con conocimientos de backend. Ansioso por aplicar mis habilidades y conocimientos en proyectos desafiantes y emocionantes.";
+      : "Egresado de la Universidad Politécnico Grancolombiano, me especializo en programación web frontend con conocimientos de backend. Ansioso por aplicar mis habilidades y conocimientos en proyectos desafiantes y emocionantes.";
   aboutMeTitle.innerHTML = englishText === true ? "About me" : "Acerca de Mi";
   aboutMePart1.innerHTML =
     englishText === true
@@ -129,6 +133,18 @@ const changeLanguage = () => {
   techStackTitle.innerHTML =
     englishText === true ? "Technologies" : "Tecnologias";
   techStackOther.innerHTML = englishText === true ? "Others" : "Otros";
+  motorSports.forEach((title) => {
+    title.innerHTML = englishText === true ? "MotorSports" : "Automovilismo";
+  });
+  football.forEach((title) => {
+    title.innerHTML = englishText === true ? "Football" : "Futbol";
+  });
+  cooking.forEach((title) => {
+    title.innerHTML = englishText === true ? "Cook" : "Cocinar";
+  });
+  videoGames.forEach((title) => {
+    title.innerHTML = englishText === true ? "VideoGames" : "VideoJuegos";
+  });
   projectsTitle.innerHTML = englishText === true ? "Projects" : "Proyectos";
   pokedexSummary.innerHTML =
     englishText === true

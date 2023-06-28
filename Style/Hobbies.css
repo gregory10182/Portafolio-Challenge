@@ -1,0 +1,236 @@
+.Hobbies {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 100%;
+    margin-bottom: 200px;
+    height: auto;
+}
+
+.Hobbies h1 {
+    font-size: clamp(28px, 3.5vw, 41px);
+}
+
+.Hobbies .HobbieStack {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 20px;
+    column-gap: 15px;
+    row-gap: 25px;
+    width: 100%;
+}
+
+.Hobbies .Selector {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    height: 50px;
+}
+
+.Hobbies .Hobbie {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+}
+
+
+
+.Hobbie img {
+    width: 100%;
+    height: 50px;
+    object-fit: contain;
+    transition: all 1s;
+}
+
+.Hobbie .Techname {
+    margin: 0;
+    position: absolute;
+    top: 100px;
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.Hobbie .tooltip {
+    opacity: 0;
+    position: absolute;
+    font-weight: 600;
+    border-radius: 5px;
+    bottom: 90px;
+    padding: 10px 10px;
+    width: 100%;
+    font-size: 13px;
+    transform: translateY(20px);
+    transition: all 0.2s;
+}
+
+.Hobbie .tooltip p {
+    margin: 0px;
+    text-align: center;
+}
+
+.Hobbie .tooltip::after {
+    content: "";
+    display: block;
+    border-top: 10px solid #00E0D9;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    position: absolute;
+    bottom: -7px;
+    left: calc(50% - 10px);
+}
+
+
+/* Dark */
+
+.Dark .Hobbies .selection {
+    background-color: #15273B;
+    color: #DADCE7;
+    border-bottom: 2px solid #CED1DF;
+}
+
+.Dark .Hobbies .Selected {
+    border-bottom: 5px solid #00E0D9;
+}
+
+.Dark .Hobbies .Hobbie {
+    border: 4px solid #00E0D9;
+}
+
+.Dark .Hobbies .Hobbie .Techname {
+    color: #00E0D9;
+}
+
+.Dark .Hobbies .Hobbie .tooltip {
+    background: #00E0D9;
+}
+
+.Dark .Hobbies .Hobbie .tooltip p {
+    color: #15273B;
+}
+
+
+.Dark .Hobbies .Hobbie .tooltip::after {
+    border-top: 10px solid #00E0D9;
+}
+
+
+
+/* Light */
+
+.Light .Hobbies .selection {
+    background-color: #DADCE7;
+    color: #15273B;
+    border-bottom: 2px solid #CED1DF;
+}
+
+.Light .Hobbies .Selected {
+    border-bottom: 5px solid #305988;
+}
+
+.Light .Hobbies .Hobbie {
+    border: 4px solid #305988;
+}
+
+.Light .Hobbies .Hobbie .Techname {
+    color: #305988;
+}
+
+.Light .Hobbies .Hobbie .tooltip {
+    background: #305988;
+    color: #DADCE7;
+}
+
+.Light .Hobbies .Hobbie .tooltip::after {
+    border-top: 10px solid #305988;
+}
+
+
+@media only screen and (min-width: 768px) {
+
+    .Hobbies .Hobbie {
+        width: 85px;
+        height: 85px;
+    }
+
+    .Hobbie .tooltip {
+        bottom: 94px;
+    }
+}
+
+
+@media only screen and (min-width: 1024px) {
+
+    .Hobbies .Hobbie {
+        width: 90px;
+        height: 90px;
+        transition: all 1s;
+    }
+
+    .Hobbie .Techname {
+        display: none;
+    }
+
+    .Hobbie .tooltip {
+        bottom: 98px;
+    }
+
+    .Hobbies .Hobbie:hover {
+        border-radius: 20%;
+        transform: rotate(360deg);
+        transition: all 1s;
+    }
+
+    .Hobbies .Hobbie:hover {
+        border-radius: 20%;
+        transform: rotate(360deg);
+        transition: all 1s;
+    }
+
+    .Hobbies .Hobbie:hover img {
+        transform: rotate(-360deg);
+        transition: all 1s;
+    }
+
+    .Hobbies .Hobbie:hover .tooltip {
+        opacity: 1;
+        transform: translateY(-2px);
+        transition: all 0.5s 0.7s;
+    }
+
+}
+
+
+@media only screen and (min-width: 1440px) {
+
+    .Hobbies .Hobbie {
+        width: 95px;
+        height: 95px;
+    }
+
+    .Hobbie .tooltip {
+        bottom: 103px;
+    }
+
+}
+
+
+@media only screen and (min-width: 1920px) {
+
+    .Hobbies .Hobbie {
+        width: 100px;
+        height: 100px;
+    }
+
+    .Hobbie .tooltip {
+        bottom: 108px;
+    }
+
+}
