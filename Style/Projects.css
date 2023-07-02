@@ -1,7 +1,7 @@
 .Projects {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-evenly;
   gap: 50px;
   width: 100%;
   height: auto;
@@ -10,7 +10,6 @@
 
 .Projects h1 {
   width: 100%;
-  font-size: clamp(28px, 3.5vw, 41px);
   text-align: center;
 }
 
@@ -204,6 +203,7 @@
 @media only screen and (min-width: 1024px) {
   .Project{
     width: 320px;
+    min-height: 275px;
   }
 
   .Project .Technology:hover{
@@ -239,7 +239,7 @@
 
   .Project{
     width: 350px;
-    min-height: 290px;
+    min-height: 300px;
   }
 
   .Project h2{

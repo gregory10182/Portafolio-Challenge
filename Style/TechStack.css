@@ -8,10 +8,6 @@
   height: auto;
 }
 
-.TechStack h1 {
-  font-size: clamp(28px, 3.5vw, 41px);
-}
-
 .TechStack .Stack {
   display: flex;
   flex-wrap: wrap;

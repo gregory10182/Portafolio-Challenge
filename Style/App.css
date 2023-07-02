@@ -10,13 +10,7 @@ body{
   line-height: 1.2;
 }
 
-.Preload * {
-  -webkit-transition: none !important;
-  -moz-transition: none !important;
-  -ms-transition: none !important;
-  -o-transition: none !important;
-  transition: none !important;
-}
+
 
 body::-webkit-scrollbar{
   width: 8px;
