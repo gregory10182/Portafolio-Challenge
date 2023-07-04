@@ -98,7 +98,7 @@ const curriculumVisualizer = () => {
 const contactForm = document.querySelector("#contactForm");
 
 contactForm.addEventListener("submit", (e) => {
-  event.preventDefault();
+  e.preventDefault();
 
   const mailTo = document.querySelector("#mailTo");
 

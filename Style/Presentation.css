@@ -16,6 +16,7 @@
 }
 
 .Presentacion .Name {
+  text-align: left;
   font-size: clamp(40px, 7vw, 85px);
   margin: 8px 0px;
   opacity: 0;
