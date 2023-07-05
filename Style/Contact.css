@@ -47,6 +47,19 @@
   visibility: hidden;
 }
 
+
+.errorMessage{ 
+  display: none;
+}
+
+.inputContainerInvalid .errorMessage{
+  display: block;
+  margin-top: 0.2rem;
+  padding-left: 0.2rem;
+
+  font-size: 14px;
+}
+
 .contactSection form .inputContainer .inputLabel {
   position: absolute;
   top: 0.7rem;
@@ -101,6 +114,19 @@
   font-size: clamp(17px, 1.5vw, 20px);
 }
 
+.Dark .inputContainerInvalid .inputV{
+  border-bottom: 2px solid #F51400;
+  color: #F51400;
+}
+
+.Dark .inputContainerInvalid .inputLabel{
+  color: #F51400;
+}
+
+.Dark .inputContainerInvalid .errorMessage {
+  color: #F51400;
+}
+
 .Dark .inputLabel{
   color: #00E0D9;
 }
@@ -120,6 +146,20 @@
 .Dark .contactSection form button {
   background-color: #DADCE7;
   color: #15273B;
+}
+
+
+.Light .inputContainerInvalid .inputV {
+  border-bottom: 2px solid #FF1F0A;
+  color: #FF1F0A;
+}
+
+.Light .inputContainerInvalid .inputLabel {
+  color: #FF1F0A;
+}
+
+.Light .inputContainerInvalid .errorMessage {
+  color: #FF1F0A;
 }
 
 .Light .inputLabel {

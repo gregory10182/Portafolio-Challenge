@@ -23,7 +23,7 @@
   <div id="root">
     <div class="Container">
       <div class="Navbar">
-        <div onclick="navBar()" class="MenuResponsive">
+        <div class="MenuResponsive">
           <span class="MenuLine"></span>
           <span class="MenuLine"></span>
           <span class="MenuLine"></span>
@@ -38,11 +38,11 @@
             <a id="navbarProjects" href="#Projects">Proyectos</a>
           </nav>
 
-          <button onclick="changeTheme()">
+          <button class="changeTheme">
             <img class="themeIcon" src=https://cdn-icons-png.flaticon.com/512/4489/4489231.png />
           </button>
 
-          <button id="languageButton" onclick="changeLanguage('./English.html')">en</button>
+          <button id="languageButtonES">en</button>
         </div>
       </div>
 
@@ -272,8 +272,6 @@
         </div>
       </div>
 
-
-
       <div class="Education" id="Education">
         <h1 id="">Educación</h1>
         <div class="Course">
@@ -488,28 +486,29 @@
         <h1>Contacto</h1>
         <form id="contactForm">
           <div class="inputContainer">
-            <input class="input" type="text" placeholder="Nombre" id="name" name="name" required
-              title="Ingrese su nombre completo">
+            <input class="input inputV" type="text" placeholder="Nombre" id="name" name="name" required maxlength="50">
             <label class="inputLabel" for="name">Nombre</label>
+            <span class="errorMessage">El campo nombre no puede estar vacio</span>
           </div>
           <div class="inputContainer">
-            <input class="input" type="email" placeholder="Email" id="email" name="email" required
-              title="Ingrese un correo valido">
+            <input class="input inputV" type="email" placeholder="Email" id="email" name="email" required
+              pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{1,5}">
             <label class="inputLabel" for="email">Correo Electronico</label>
+            <span class="errorMessage">El campo correo no puede estar vacio</span>
           </div>
           <div class="inputContainer">
-            <input class="input" type="text" placeholder="Asunto" id="subject" name="subject" required>
+            <input class="input inputV" type="text" placeholder="Asunto" id="subject" name="subject" required
+              maxlength="50">
             <label class="inputLabel" for="subject">Asunto</label>
+            <span class="errorMessage">El campo asunto no puede estar vacio</span>
           </div>
           <div class="inputContainer">
-            <textarea class="textArea" placeholder="Mensaje" name="message" id="message" cols="30" rows="10"
-              required></textarea>
+            <textarea class="textArea inputV" placeholder="Mensaje" name="message" id="message" cols="30" rows="10"
+              required maxlength="300"></textarea>
             <label class="inputLabel" for="message">Mensaje</label>
+            <span class="errorMessage">El campo mensaje no puede estar vacio</span>
           </div>
-
-
-
-          <button>Enviar Mensaje</button>
+          <button class="sendMessage" disabled>Enviar Mensaje</button>
         </form>
         <a href="mailto:Gregory10183@gmail.com" id="mailTo"></a>
       </div>
@@ -517,6 +516,13 @@
   </div>
 </body>
 
-<script src="script.js"></script>
+<script src="./js/validations.js"></script>
+<script src="./js/stackChange.js"></script>
+<script src="./js/navBar.js"></script>
+<script src="./js/changeTheme.js"></script>
+<script src="./js/changeLanguage.js"></script>
+<script src="./js/curriculumVisualizer.js"></script>
+<script src="./js/contact.js"></script>
+
 
 </html>
