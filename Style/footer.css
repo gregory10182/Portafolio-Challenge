@@ -13,3 +13,11 @@
   color: #00E0D9;
   text-align: center;
 }
+
+.Dark .footer h2{
+  color: #00E0D9;
+}
+
+.Light .footer h2{
+  color: #15273B;
+}
