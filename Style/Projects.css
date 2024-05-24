@@ -13,7 +13,6 @@
   text-align: center;
 }
 
-
 .Project {
   display: flex;
   justify-content: center;
@@ -27,7 +26,6 @@
   padding: 30px;
 }
 
-
 .Project h2 {
   width: 100%;
   height: 7%;
@@ -36,13 +34,13 @@
   text-align: center;
 }
 
-.Project p{
+.Project p {
   width: 100%;
   height: 55%;
   margin: 0;
 }
 
-.Project .Technologies{
+.Project .Technologies {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -70,10 +68,10 @@
 .Project .Technology img {
   width: 20px;
   height: 20px;
-  object-fit:contain;
+  object-fit: contain;
 }
 
-.Project .Technology .Techname{
+.Project .Technology .Techname {
   top: 45px;
   font-size: 8px;
   width: max-content;
@@ -86,16 +84,16 @@
   border-radius: 5px;
   bottom: 48px;
   padding: 5px 8px;
-  width: 100%;
+  width: fit-content;
   font-size: 8px;
 }
 
-.Project .Technology .tooltip p{
+.Project .Technology .tooltip p {
   margin: 0px;
   text-align: center;
 }
 
-.Project .Links{
+.Project .Links {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -104,18 +102,15 @@
   height: 8%;
 }
 
-.Project .Links a{
+.Project .Links a {
   height: 20px;
   width: 20px;
 }
 
-.Project .Links img{
+.Project .Links img {
   height: 100%;
   width: 100%;
 }
-
-
-
 
 /* Dark */
 
@@ -124,89 +119,88 @@
 }
 
 .Dark .Project h2 {
-  color: #00E0D9;
+  color: #00e0d9;
 }
 
 .Dark .Project p {
-  color: #B5BACF;
+  color: #b5bacf;
 }
 
-.Dark .Project .Technology{
-  border: 3px solid #00E0D9;
+.Dark .Project .Technology {
+  border: 3px solid #00e0d9;
 }
 
-.Dark .Project .Technology .Techname{
-  color: #00E0D9;
+.Dark .Project .Technology .Techname {
+  color: #00e0d9;
 }
 
-.Dark .Project .Technology .tooltip{
-  background: #00E0D9;
+.Dark .Project .Technology .tooltip {
+  background: #00e0d9;
 }
 
-.Dark .Project .Technology .tooltip p{
-  color: #15273B;
+.Dark .Project .Technology .tooltip p {
+  color: #15273b;
 }
 
-.Dark .Project .Technology .tooltip::after{
-  border-top: 10px solid #00E0D9;
+.Dark .Project .Technology .tooltip::after {
+  border-top: 10px solid #00e0d9;
 }
 
 .Dark .Links img {
-  filter: invert(92%) sepia(12%) saturate(325%) hue-rotate(196deg) brightness(91%) contrast(91%);
+  filter: invert(92%) sepia(12%) saturate(325%) hue-rotate(196deg)
+    brightness(91%) contrast(91%);
 }
-
 
 /* Light */
 
 .Light .Project {
-  background-color: #E6E8EF;
+  background-color: #e6e8ef;
 }
 
 .Light .Project {
-  color: #15273B;
+  color: #15273b;
 }
 
-.Light .Project .Technology{
+.Light .Project .Technology {
   border: 3px solid #305988;
 }
 
-.Light .Project .Technology .Techname{
+.Light .Project .Technology .Techname {
   color: #305988;
 }
 
-.Light .Project .Technology .tooltip{
+.Light .Project .Technology .tooltip {
   background: #305988;
-  color: #DADCE7;
+  color: #dadce7;
 }
 
-.Light .Project .Technology .tooltip::after{
+.Light .Project .Technology .tooltip::after {
   border-top: 10px solid #305988;
 }
 
 .Light .Links img {
-  filter: invert(17%) sepia(15%) saturate(3224%) hue-rotate(176deg) brightness(92%) contrast(84%);
+  filter: invert(17%) sepia(15%) saturate(3224%) hue-rotate(176deg)
+    brightness(92%) contrast(84%);
 }
 
-
 @media only screen and (min-width: 768px) {
-
-  .Project{
+  .Project {
     width: 350px;
     height: max-content;
   }
 
-  .Project p{
+  .Project p {
     height: max-content;
   }
 }
 
 @media only screen and (min-width: 1024px) {
-  .Project{
+  .Project {
     width: 320px;
     min-height: 275px;
   }
 
-  .Project .Technology:hover{
+  .Project .Technology:hover {
     transition: all 1s;
   }
 
@@ -215,47 +209,43 @@
     transform: rotate(360deg);
     transition: all 1s;
   }
-  
+
   .Project .Technology:hover {
     border-radius: 20%;
     transform: rotate(360deg);
     transition: all 1s;
   }
-  
-  .Project .Technology:hover img{
+
+  .Project .Technology:hover img {
     transform: rotate(-360deg);
     transition: all 1s;
   }
-  
-  .Project .Technology:hover .tooltip{
+
+  .Project .Technology:hover .tooltip {
     opacity: 1;
     transform: translateY(-2px);
     transition: all 0.5s 0.7s;
   }
 }
 
-
 @media only screen and (min-width: 1440px) {
-
-  .Project{
+  .Project {
     width: 350px;
     min-height: 300px;
   }
 
-  .Project h2{
+  .Project h2 {
     font-size: 26px;
   }
 
-  .Project .Technology{
+  .Project .Technology {
     width: 50px;
     height: 50px;
   }
 }
 
-
 @media only screen and (min-width: 1920px) {
-
-  .Project{
+  .Project {
     width: 500px;
   }
 
