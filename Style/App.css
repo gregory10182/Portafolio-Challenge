@@ -1,10 +1,11 @@
-html{
+html {
   width: 100vw;
   height: 100vh;
   overflow-x: hidden;
 }
 
-body{
+body {
+  font-family: 'Poppins', sans-serif !important;
   display: flex;
   justify-content: center;
   line-height: 1.2;
@@ -12,11 +13,11 @@ body{
 
 
 
-body::-webkit-scrollbar{
+body::-webkit-scrollbar {
   width: 8px;
 }
 
-body::-webkit-scrollbar-thumb{
+body::-webkit-scrollbar-thumb {
   border-radius: 5px;
 }
 
@@ -29,43 +30,43 @@ body::-webkit-scrollbar-thumb{
   height: 100%;
 }
 
-.Dark{
+.Dark {
   background-color: #15273B;
 }
 
-.Dark::-webkit-scrollbar-track{
+.Dark::-webkit-scrollbar-track {
   background-color: #15273B;
 }
 
-.Dark::-webkit-scrollbar-thumb{
+.Dark::-webkit-scrollbar-thumb {
   background-color: #00E0D9;
 }
 
-.Dark::-webkit-scrollbar-thumb:hover{
+.Dark::-webkit-scrollbar-thumb:hover {
   background-color: #00A39E;
 }
 
 
 
 
-.Light{
+.Light {
   background-color: #DADCE7;
 }
 
-.Light::-webkit-scrollbar-track{
+.Light::-webkit-scrollbar-track {
   background-color: #DADCE7;
 }
 
-.Light::-webkit-scrollbar-thumb{
+.Light::-webkit-scrollbar-thumb {
   background-color: #15273B;
 }
 
-.Light::-webkit-scrollbar-thumb:hover{
+.Light::-webkit-scrollbar-thumb:hover {
   background-color: #203b5b;
 }
 
 
-.Container{
+.Container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -81,7 +82,7 @@ body::-webkit-scrollbar-thumb{
 
 @media only screen and (min-width: 768px) {
 
-  #root{
+  #root {
     margin: 0px 70px;
   }
 
@@ -90,7 +91,7 @@ body::-webkit-scrollbar-thumb{
 
 @media only screen and (min-width: 1024px) {
 
-  #root{
+  #root {
     margin: 0px 140px;
   }
 
@@ -99,7 +100,7 @@ body::-webkit-scrollbar-thumb{
 
 @media only screen and (min-width: 1440px) {
 
-  #root{
+  #root {
     margin: 0px 210px;
   }
 

@@ -8,7 +8,7 @@
   row-gap: 20px;
 }
 
-.Course{
+.Course {
   display: flex;
   width: 100%;
   padding: 25px;
@@ -21,7 +21,7 @@
 }
 
 
-.Course .CourseImg{
+.Course .CourseImg {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -29,13 +29,13 @@
   height: 60%;
 }
 
-.CourseImg img{
+.CourseImg img {
   width: 60%;
   height: 60%;
   object-fit: contain;
 }
 
-.CourseTitle{
+.CourseTitle {
   display: flex;
   align-items: center;
   margin: 0;
@@ -44,7 +44,7 @@
   font-size: 20px;
 }
 
-.CourseDuration{
+.CourseDuration {
   margin: 0;
   width: 100%;
   height: 10%;
@@ -52,24 +52,28 @@
 
 
 
-.Dark .Course{
+.Dark .Course {
   background-color: #203b5b;
 }
 
-.Dark .CourseTitle{
+.Dark .CourseTitle {
   color: #00E0D9;
 }
 
-.Dark #Poligran{
+.Dark #Poligran {
   filter: brightness(100);
 }
 
-.Dark #Alura{
+.Dark #Alura {
   filter: brightness(100);
 }
 
-.Dark .CourseDuration{
+.Dark .CourseDuration {
   color: #B5BACF;
+}
+
+.Dark #Img-UNAB {
+  filter: invert(1)
 }
 
 .Light .Course {
@@ -85,29 +89,31 @@
 }
 
 
+
+
 @media only screen and (min-width: 768px) {
 
-  .Education{
+  .Education {
     justify-content: space-evenly;
     row-gap: 5px;
     column-gap: 30px;
   }
 
-  .Education h1{
+  .Education h1 {
     width: 100%;
   }
 
-  .Course{
+  .Course {
     width: 30%;
     height: 200px;
     padding: 15px;
   }
 
-  .CourseTitle{
+  .CourseTitle {
     font-size: 14px;
   }
 
-  .CourseDuration{
+  .CourseDuration {
     font-size: 12px;
   }
 }

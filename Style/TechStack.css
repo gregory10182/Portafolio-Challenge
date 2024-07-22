@@ -15,15 +15,15 @@
   align-items: center;
   margin-top: 20px;
   column-gap: 15px;
-  row-gap: 25px;
+  row-gap: 45px;
   width: 100%;
 }
 
-.TechStack #BackEndStack{
+.TechStack #BackEndStack {
   display: none;
 }
 
-.TechStack #OtherStack{
+.TechStack #OtherStack {
   display: none;
 }
 
@@ -40,7 +40,7 @@
   border-radius: 0;
 }
 
-.Selector .Selected{
+.Selector .Selected {
   transition: all 0.2s;
 }
 
@@ -55,8 +55,6 @@
   height: 90px;
 }
 
-
- 
 .Technology img {
   width: 100%;
   height: 50px;
@@ -64,7 +62,7 @@
   transition: all 1s;
 }
 
-.Technology .Techname{
+.Technology .Techname {
   margin: 0;
   position: absolute;
   top: 100px;
@@ -72,7 +70,7 @@
   font-size: 12px;
 }
 
-.Technology .tooltip {
+.Technology .Tooltip {
   opacity: 0;
   position: absolute;
   font-weight: 600;
@@ -85,12 +83,12 @@
   transition: all 0.2s;
 }
 
-.Technology .tooltip p {
+.Technology .Tooltip p {
   margin: 0px;
   text-align: center;
 }
 
-.Technology .tooltip::after {
+.Technology .Tooltip::after {
   content: "";
   display: block;
   border-top: 10px solid #00E0D9;
@@ -110,7 +108,7 @@
   border-bottom: 2px solid #CED1DF;
 }
 
-.Dark .TechStack .Selected{
+.Dark .TechStack .Selected {
   border-bottom: 5px solid #00E0D9;
 }
 
@@ -118,20 +116,20 @@
   border: 4px solid #00E0D9;
 }
 
-.Dark .TechStack .Technology .Techname{
+.Dark .TechStack .Technology .Techname {
   color: #00E0D9;
 }
 
-.Dark .TechStack .Technology .tooltip {
+.Dark .TechStack .Technology .Tooltip {
   background: #00E0D9;
 }
 
-.Dark .TechStack .Technology .tooltip p {
+.Dark .TechStack .Technology .Tooltip p {
   color: #15273B;
 }
 
 
-.Dark .TechStack .Technology .tooltip::after {
+.Dark .TechStack .Technology .Tooltip::after {
   border-top: 10px solid #00E0D9;
 }
 
@@ -145,7 +143,7 @@
   border-bottom: 2px solid #CED1DF;
 }
 
-.Light .TechStack .Selected{
+.Light .TechStack .Selected {
   border-bottom: 5px solid #305988;
 }
 
@@ -153,16 +151,16 @@
   border: 4px solid #305988;
 }
 
-.Light .TechStack .Technology .Techname{
+.Light .TechStack .Technology .Techname {
   color: #305988;
 }
 
-.Light .TechStack .Technology .tooltip {
+.Light .TechStack .Technology .Tooltip {
   background: #305988;
   color: #DADCE7;
 }
 
-.Light .TechStack .Technology .tooltip::after {
+.Light .TechStack .Technology .Tooltip::after {
   border-top: 10px solid #305988;
 }
 
@@ -174,7 +172,7 @@
     height: 85px;
   }
 
-  .Technology .tooltip {
+  .Project .Technology .Tooltip {
     bottom: 94px;
   }
 }
@@ -188,11 +186,11 @@
     transition: all 1s;
   }
 
-  .Technology .Techname{
+  .Technology .Techname {
     display: none;
   }
 
-  .Technology .tooltip {
+  .Project .Technology .Tooltip {
     bottom: 98px;
   }
 
@@ -201,19 +199,19 @@
     transform: rotate(360deg);
     transition: all 1s;
   }
-  
+
   .TechStack .Technology:hover {
     border-radius: 20%;
     transform: rotate(360deg);
     transition: all 1s;
   }
-  
-  .TechStack .Technology:hover img{
+
+  .TechStack .Technology:hover img {
     transform: rotate(-360deg);
     transition: all 1s;
   }
-  
-  .TechStack .Technology:hover .tooltip{
+
+  .TechStack .Technology:hover .Tooltip {
     opacity: 1;
     transform: translateY(-2px);
     transition: all 0.5s 0.7s;
@@ -229,7 +227,7 @@
     height: 95px;
   }
 
-  .Technology .tooltip {
+  .Technology .Tooltip {
     bottom: 103px;
   }
 
@@ -243,7 +241,7 @@
     height: 100px;
   }
 
-  .Technology .tooltip {
+  .Technology .Tooltip {
     bottom: 108px;
   }
 

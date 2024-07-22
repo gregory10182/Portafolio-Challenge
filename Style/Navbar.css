@@ -1,5 +1,4 @@
-
-.Navbar{
+.Navbar {
   display: flex;
   margin: 0;
   justify-content: flex-end;
@@ -10,7 +9,7 @@
 }
 
 
-.MenuResponsive{
+.MenuResponsive {
   position: fixed;
   top: 20px;
   left: 20px;
@@ -22,7 +21,7 @@
   width: 33px;
 }
 
-.MenuLine{
+.MenuLine {
   display: block;
   height: 5px;
   margin: 5px 0 2px;
@@ -32,7 +31,7 @@
   transform-origin: left center;
 }
 
-.Navigation{
+.Navigation {
   display: none;
   position: fixed;
   z-index: 19;
@@ -45,7 +44,7 @@
   height: 100%;
 }
 
-.Navigation nav{
+.Navigation nav {
   width: 100%;
   height: 45%;
   margin-top: 50px;
@@ -55,65 +54,66 @@
   align-items: center;
 }
 
-.Navigation a{
+.Navigation a {
   text-align: left;
   font-size: 20px;
   font-weight: 600;
   width: 55%;
   margin: 0;
+  text-decoration: none;
 }
 
 
-.Navigation button{
+.Navigation button {
   width: 30px;
   height: 30px;
-  margin-right: 10px ;
+  margin-right: 10px;
   border-radius: 50%;
 }
 
 
-.themeIcon{
+.themeIcon {
   height: 10px;
   width: 10px;
 }
 
-.NavbarIntro{
+.NavbarIntro {
   display: flex;
   opacity: 0;
   -webkit-animation: slide-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
   animation: slide-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
-.NavbarOutro{
+.NavbarOutro {
   display: flex;
   opacity: 1;
   -webkit-animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
   animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
-.OpenTop{
+.OpenTop {
   animation: rotateTop 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
 
-.OpenMid{
+.OpenMid {
   animation: scaleMid 0.2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
-.OpenBottom{
+.OpenBottom {
   animation: rotateBottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
 
-.CloseTop{
+.CloseTop {
   animation: rotateTopR 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
-.CloseMid{
+.CloseMid {
   animation: scaleMidR 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
-.CloseBottom{
+.CloseBottom {
   animation: rotateBottomR 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
@@ -188,89 +188,95 @@
 @-webkit-keyframes slide-right {
   0% {
     -webkit-transform: translateX(-100px);
-            transform: translateX(-100px);
-            opacity: 0;
+    transform: translateX(-100px);
+    opacity: 0;
   }
+
   100% {
     -webkit-transform: translateX(0px);
-            transform: translateX(0px);
-            opacity: 1;
+    transform: translateX(0px);
+    opacity: 1;
   }
 }
+
 @keyframes slide-right {
   0% {
     -webkit-transform: translateX(-100px);
-            transform: translateX(-100px);
-            opacity: 0;
+    transform: translateX(-100px);
+    opacity: 0;
   }
+
   100% {
     -webkit-transform: translateX(0px);
-            transform: translateX(0px);
-            opacity: 1;
+    transform: translateX(0px);
+    opacity: 1;
   }
 }
 
 @-webkit-keyframes slide-left {
   0% {
     -webkit-transform: translateX(0px);
-            transform: translateX(0px);
-            opacity: 1;
+    transform: translateX(0px);
+    opacity: 1;
   }
+
   100% {
     -webkit-transform: translateX(-200px);
-            transform: translateX(-200px);
-            opacity: 0;
+    transform: translateX(-200px);
+    opacity: 0;
   }
 }
+
 @keyframes slide-left {
   0% {
     -webkit-transform: translateX(0px);
-            transform: translateX(0px);
-            opacity: 1;
+    transform: translateX(0px);
+    opacity: 1;
   }
+
   100% {
     -webkit-transform: translateX(-200px);
-            transform: translateX(-200px);
-            opacity: 0;
+    transform: translateX(-200px);
+    opacity: 0;
   }
 }
 
 
 /* Dark */
 
-.Dark .MenuLine{
-    background-color: #00E0D9;
+.Dark .MenuLine {
+  background-color: #00E0D9;
 }
 
-.Dark .Navigation{
-    background-color: #203b5b;
+.Dark .Navigation {
+  background-color: #203b5b;
 }
 
-.Dark .Navigation nav a{
-    color: #00E0D9;
+.Dark .Navigation nav a {
+  color: #00E0D9;
 }
 
 
 /* Light */
 
 
-.Light .MenuLine{
-    background-color: #15273B;
+.Light .MenuLine {
+  background-color: #15273B;
 }
 
-.Light .Navigation{
-    background-color: #E6E8EF;
+.Light .Navigation {
+  background-color: #E6E8EF;
 }
 
-.Light .Navigation nav a{
-    color: #15273B;
+.Light .Navigation nav a {
+  color: #15273B;
 }
 
-.Light .Navigation button{
-    background-color: #15273B;
-    color: #E6E8EF;
+.Light .Navigation button {
+  background-color: #15273B;
+  color: #E6E8EF;
 }
 
-.Light .Navigation .themeIcon{
-    filter: invert(1);
+.Light .Navigation .themeIcon {
+  filter: invert(1);
 }

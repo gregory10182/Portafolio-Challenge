@@ -22,7 +22,7 @@
   height: max-content;
   width: 100%;
   background-color: #203b5b;
-  border-radius: 5%;
+  border-radius: 10px;
   padding: 30px;
 }
 
@@ -77,7 +77,7 @@
   width: max-content;
 }
 
-.Project .Technology .tooltip {
+.Project .Technology .Tooltip {
   opacity: 0;
   position: absolute;
   font-weight: 600;
@@ -88,7 +88,7 @@
   font-size: 8px;
 }
 
-.Project .Technology .tooltip p {
+.Project .Technology .Tooltip p {
   margin: 0px;
   text-align: center;
 }
@@ -134,21 +134,20 @@
   color: #00e0d9;
 }
 
-.Dark .Project .Technology .tooltip {
+.Dark .Project .Technology .Tooltip {
   background: #00e0d9;
 }
 
-.Dark .Project .Technology .tooltip p {
+.Dark .Project .Technology .Tooltip p {
   color: #15273b;
 }
 
-.Dark .Project .Technology .tooltip::after {
+.Dark .Project .Technology .Tooltip::after {
   border-top: 10px solid #00e0d9;
 }
 
 .Dark .Links img {
-  filter: invert(92%) sepia(12%) saturate(325%) hue-rotate(196deg)
-    brightness(91%) contrast(91%);
+  filter: invert(92%) sepia(12%) saturate(325%) hue-rotate(196deg) brightness(91%) contrast(91%);
 }
 
 /* Light */
@@ -169,45 +168,38 @@
   color: #305988;
 }
 
-.Light .Project .Technology .tooltip {
+.Light .Project .Technology .Tooltip {
   background: #305988;
   color: #dadce7;
 }
 
-.Light .Project .Technology .tooltip::after {
+.Light .Project .Technology .Tooltip::after {
   border-top: 10px solid #305988;
 }
 
 .Light .Links img {
-  filter: invert(17%) sepia(15%) saturate(3224%) hue-rotate(176deg)
-    brightness(92%) contrast(84%);
+  filter: invert(17%) sepia(15%) saturate(3224%) hue-rotate(176deg) brightness(92%) contrast(84%);
 }
 
 @media only screen and (min-width: 768px) {
   .Project {
-    width: 350px;
+    width: 90%;
     height: max-content;
   }
 
-  .Project p {
+  .Project .Project-summary {
+    min-height: 100px;
     height: max-content;
   }
 }
 
 @media only screen and (min-width: 1024px) {
   .Project {
-    width: 320px;
-    min-height: 275px;
+    width: 47%;
   }
 
-  .Project .Technology:hover {
-    transition: all 1s;
-  }
-
-  .Project .Technology:hover {
-    border-radius: 20%;
-    transform: rotate(360deg);
-    transition: all 1s;
+  .Project .Project-summary {
+    min-height: 180px;
   }
 
   .Project .Technology:hover {
@@ -221,7 +213,7 @@
     transition: all 1s;
   }
 
-  .Project .Technology:hover .tooltip {
+  .Project .Technology:hover .Tooltip {
     opacity: 1;
     transform: translateY(-2px);
     transition: all 0.5s 0.7s;
@@ -229,11 +221,6 @@
 }
 
 @media only screen and (min-width: 1440px) {
-  .Project {
-    width: 350px;
-    min-height: 300px;
-  }
-
   .Project h2 {
     font-size: 26px;
   }
