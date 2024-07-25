@@ -15,12 +15,12 @@
   margin-bottom: 0;
 }
 
-.aboutMe .CV {
+/* .aboutMe .CV {
   height: 40px;
   width: 200px;
   margin: 30px 0;
   font-weight: 600;
-}
+} */
 
 
 /* Dark */
@@ -34,9 +34,9 @@
   color: #B5BACF;
 }
 
-.Dark .aboutMe .CV {
-  background-color: #DADCE7;
-  color: #15273B;
+.Dark .aboutMe .btn-cv {
+  background-color: #DADCE7 !important;
+  color: #15273B !important;
 }
 
 
@@ -50,9 +50,9 @@
   color: #203b5b;
 }
 
-.Light .aboutMe .CV {
-  background-color: #15273B;
-  color: #DADCE7;
+.Light .aboutMe .btn-cv {
+  background-color: #15273B !important;
+  color: #DADCE7 !important;
 }
 
 
@@ -92,6 +92,3 @@
   }
 
 } */
-
-
-
