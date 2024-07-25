@@ -191,7 +191,7 @@
   }
 
   .Project .Technology .Tooltip {
-    bottom: 98px;
+    bottom: 90px;
   }
 
   .TechStack .Technology:hover {
@@ -228,7 +228,7 @@
   }
 
   .Technology .Tooltip {
-    bottom: 103px;
+    bottom: 93px;
   }
 
 }
@@ -242,7 +242,7 @@
   }
 
   .Technology .Tooltip {
-    bottom: 108px;
+    bottom: 98px;
   }
 
 }
