@@ -43,8 +43,18 @@
   visibility: hidden;
 }
 
+.input::-moz-placeholder {
+  visibility: hidden;
+  opacity: 0;
+}
+
 .textArea::placeholder {
   visibility: hidden;
+}
+
+.textArea::-moz-placeholder {
+  visibility: hidden;
+  opacity: 0;
 }
 
 
