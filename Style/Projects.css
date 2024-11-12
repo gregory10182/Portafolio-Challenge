@@ -26,6 +26,14 @@
   padding: 30px;
 }
 
+#ReactRouter {
+  width: 20px;
+  height: 20px;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
 .Project h2 {
   width: 100%;
   height: 7%;
@@ -126,8 +134,14 @@
   color: #b5bacf;
 }
 
+
+
 .Dark .Project .Technology {
   border: 3px solid #00e0d9;
+}
+
+.Dark #ReactRouter {
+  background-image: url("https://reactrouter.com/_brand/React%20Router%20Brand%20Assets/React%20Router%20Logo/Dark.png");
 }
 
 .Dark .Project .Technology .Techname {
@@ -162,6 +176,10 @@
 
 .Light .Project .Technology {
   border: 3px solid #305988;
+}
+
+.Light #ReactRouter {
+  background-image: url("https://reactrouter.com/_brand/React%20Router%20Brand%20Assets/React%20Router%20Logo/Light.png");
 }
 
 .Light .Project .Technology .Techname {
@@ -209,6 +227,11 @@
   }
 
   .Project .Technology:hover img {
+    transform: rotate(-360deg);
+    transition: all 1s;
+  }
+
+  .Project .Technology:hover #ReactRouter {
     transform: rotate(-360deg);
     transition: all 1s;
   }
