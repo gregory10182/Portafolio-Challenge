@@ -8,6 +8,7 @@
   row-gap: 20px;
 }
 
+
 .Course {
   display: flex;
   width: 100%;
@@ -29,7 +30,7 @@
   height: 60%;
 }
 
-.CourseImg img {
+.CourseImg img, svg {
   width: 60%;
   height: 60%;
   object-fit: contain;
@@ -52,6 +53,8 @@
 
 
 
+
+
 .Dark .Course {
   background-color: #203b5b;
 }
@@ -60,11 +63,11 @@
   color: #00E0D9;
 }
 
-.Dark #Poligran {
-  filter: brightness(100);
+.Dark #alura path {
+  fill: #fff;
 }
 
-.Dark #Alura {
+.Dark #Poligran {
   filter: brightness(100);
 }
 
@@ -78,6 +81,10 @@
 
 .Light .Course {
   background-color: #E6E8EF;
+}
+
+.Light #alura path {
+  fill: #15273B;
 }
 
 .Light .CourseTitle {
